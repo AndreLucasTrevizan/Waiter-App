@@ -1,0 +1,28 @@
+version: '3.7'
+
+services:
+  waiter_mongo:
+    image: mongo
+    container_name: waitermongo_container
+    env_file:
+      - .env
+    volumes:
+      - ./database/:/data/db
+    ports:
+      - '${MONGO_PORT}:${MONGO_PORT}'
+    networks:
+      - waiter
+  waiter_api:
+    build: './api'
+    container_name: waiterapi_container
+    env_file:
+      - .env
+    volumes:
+      - ./api:/home/waiter/api
+    ports:
+      - '${PORT}:${PORT}'
+    networks:
+      - waiter
+
+networks:
+  waiter:

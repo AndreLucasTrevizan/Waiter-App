@@ -1,0 +1,28 @@
+.orderContainer {
+  background-color: var(--white);
+  padding: 1rem;
+  width: 400px;
+}
+
+.orderContent {
+  display: flex;
+  flex-direction: column;
+
+  span {
+    margin: 0.5rem 0;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    border: none;
+    background-color: var(--orange);
+    border-radius: 0.5rem;
+    color: var(--white);
+  }
+}
+
+@media (max-width: 650px) {
+  .orderContainer {
+    margin-bottom: 1rem;
+  }
+}

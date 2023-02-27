@@ -1,0 +1,130 @@
+@media (min-width: 650px) {
+  .modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modalOverlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(171, 210, 211, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .modalContent {
+    z-index: 99;
+    width: 40%;
+    padding: 1rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+  }
+
+  .modalActions {
+    button {
+      background-color: var(--orange);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      color: var(--white);
+      margin-top: 1rem;
+    }
+  }
+
+  .modalHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+
+  .itemDetails {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    small {
+      margin-left: 2rem;
+      padding-top: 0.3rem;
+    }
+  }
+
+  .closeIcon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 650px) {
+  .modal {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .modalOverlay {
+    width: 100%;
+    height: 100vh;
+    position: fixed;
+    background-color: rgba(171, 210, 211, 0.5);
+    backdrop-filter: blur(5px);
+  }
+
+  .modalContent {
+    z-index: 99;
+    width: 100%;
+    padding: 1rem;
+    margin: 0 1rem;
+    background-color: var(--white);
+    border-radius: 0.5rem;
+  }
+
+  .modalActions {
+    button {
+      background-color: var(--orange);
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 0.5rem;
+      display: flex;
+      align-items: center;
+      color: var(--white);
+      margin-top: 1rem;
+    }
+  }
+
+  .modalHeader {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    justify-content: space-between;
+  }
+
+  .itemDetails {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+
+    small {
+      margin-left: 2rem;
+      padding-top: 0.3rem;
+    }
+  }
+
+  .closeIcon:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+  }
+}
